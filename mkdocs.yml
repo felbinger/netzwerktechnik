@@ -1,0 +1,46 @@
+site_name: "Netzwerktechnik"
+site_url: https://netzwerktechnik.pages.dev/
+repo_name: felbinger/netzwerktechnik
+repo_url: https://github.com/felbinger/netzwerktechnik/
+site_description: "Netzwerktechnik"
+site_author: https://github.com/felbinger
+edit_uri: https://github.dev/felbinger/netzwerktechnik/blob/main/docs
+
+theme:
+  name: 'material'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'blue'
+      accent: 'lime'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'blue'
+      accent: 'lime'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  language: de
+  direction: ltr
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.sections
+
+markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - git-revision-date
