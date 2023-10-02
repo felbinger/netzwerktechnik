@@ -9,20 +9,8 @@ edit_uri: https://github.dev/felbinger/netzwerktechnik/blob/main/docs
 theme:
   name: 'material'
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: slate
       primary: 'blue'
-      accent: 'lime'
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: 'blue'
-      accent: 'lime'
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
 
   font:
     text: Roboto
@@ -41,6 +29,9 @@ theme:
 markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
+  - attr_list   # image resize and lazy loading
+  - md_in_html  # center images, add caption
 
 plugins:
   - git-revision-date
+  - git-revision-date-localized
