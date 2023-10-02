@@ -9,6 +9,6 @@ Um die Beispiele besser verstehen zu können, empfehlen wir, diese praktisch nac
 Hierfür können Sie virtuelle Maschinen nutzen, auf denen die Router-Betriebssysteme installiert sind.
 
 <figure markdown>
-  ![](./img/virtualbox.drawio.svg){ loading=lazy width="500px" }
+  ![](./img/virtualbox.drawio.svg){ loading=lazy width=500px }
   <figcaption>Schematische Darstellung der einzelnen virtuellen Maschinen</figcaption>
 </figure>

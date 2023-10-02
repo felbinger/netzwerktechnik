@@ -3,13 +3,59 @@
 Um die Pakete in den internen Netzwerken mittels Wireshark passiv betrachten zu können setzen wir uns auch noch eine 
 Client VM auf.
 
-> TODO @Luis Erklärung warum wir das wollen
+Dies ist nützlich, damit wir besser sehen können, was wir genau konfiguriert haben und wie die einzelnen Pakete in der
+Praxis genau aussehen.
 
+
+### Installation der ISO-Datei
 Hierfür kann beispielsweise das Betriebssystem Linux Mint mit dem Desktopenvironment Mate verwendet werden, welches 
-[hier](https://linuxmint.com/download.php) heruntergeladen werden kann.
+[hier](https://linuxmint.com/download.php) heruntergeladen werden kann (Welcher Mirror zum Herunterladen verwendet wird,
+macht keinen wesentlichen Unterschied).
 
 > TODO @Luis Beschreiben das VM erstellt wird und Linux Mint installiert wird
 
+### Erstellen der VM
+Wenn man das heruntergeladene ISO Image jetzt als virtuelle Maschine starten will, öffnet man zuerst die Ansicht in 
+Virtual Box um eine neue virtuelle Maschine zu erstellen. <br>
+Der Name für die virtuelle Maschine ist frei wählbar und hat keinen Einfluss auf den weiteren Verlauf, um möglich 
+auftretende Fehler zu vermeiden, empfehlen wir in dem Namen nur Buchstaben und Zahlen zu verwenden und auf Leerzeichen
+zu verzichten. <br>
+Der Ordner für die virtuellen Maschinen sollte bei dem standard Ordner bleiben, außer Sie haben schon von
+früheren Maschinen den Ordner an eine andere Stelle verlegt.
+
+Für die ISO-Datei wählen Sie die ISO-Datei aus, welche Sie soeben heruntergeladen haben. Daraufhin, sollte sich der Typ
+und die Version automatisch ändern, falls dies nicht der Fall ist, ändern Sie den `Typ` auf `Linux` und die `Version` 
+auf `Ubuntu (64-Bit)`.
+
+Final sollte die VM Konfiguration ungefähr wie folgt aussehen:
+
+<figure markdown>
+  ![](../img/virtual_box/linux-mint-config.png){ loading=lazy width=600px }
+</figure>
+
+
+### Einrichten der VM
+Wenn Sie nun auf Weiter/Finish o. Ä. gedrückt haben, sollte sich die VM automatisch starten und es sollte der Linux Boot
+Manager zu sehen sein. Für Linux fremde Nutzer könnte dies etwas befremdlich aussehen, aber das einzige, was Sie machen 
+müssen, ist <kbd>&#x21b5;</kbd> (Enter) drücken.
+
+Nun sollte das System hochfahren.
+Oben Links in der Ecke sollte sich eine CD mit dem Schriftzug `Install Linux Mint` befinden. Dieses Icon können Sie wie
+ein Programm starten. Nach einem Doppelklick und kurzer Wartezeit sollte sich ein Fenster öffnen, wo Sie zuerst die 
+gewünschte Sprache auswählen können. Danach folgt das Keyboard Layout. <br> 
+Die nächsten drei Fenster können Sie einfach durchklicken, ohne Änderungen vorzunehmen.
+Die nächsten Fenster zum Setzen der Zeitzone und der Konfiguration des Benutzers sollten selbsterklärend sein. <br>
+Im nächsten Schritt wird das System installiert. Das kann von Gerät zu Gerät eine Zeit dauern (3 - 8 Minuten). <br>
+Wenn das System fertig installiert ist, können Sie die VM neu starten. Dabei ist aber zu beachten, dass man davor die 
+Installationsdatei entfernen muss. Diese findet man, wenn man in Virtual Box in die Einstellungen der Maschine geht, 
+dann auf Speicher/Storage und dort die `{VMName}.vdi` mit dem Icon am unteren Ende des Fensters löscht.
+
+> TODO @Luis Bild von dem Icon zeigen
+<figure markdown>
+  ![](../img/virtual_box/delete-vdi.png){ loading=lazy width=200px }
+</figure>
+
+### Installation Wireshark
 Nachdem die virtuelle Maschine neu gestartet wurde, kann Wireshark über den Paketmanager installiert werden:
 ```shell
 sudo apt install -y wireshark
