@@ -1,2 +1,1 @@
-# 2. Virtual Local Area Network
-
+# 2. Virtual LAN (IEEE 802.1q)
