@@ -16,10 +16,10 @@ macht keinen wesentlichen Unterschied).
 
 ### Erstellen der VM
 Wenn man das heruntergeladene ISO Image jetzt als virtuelle Maschine starten will, öffnet man zuerst die Ansicht in 
-Virtual Box um eine neue virtuelle Maschine zu erstellen. <br>
+Virtual Box um eine neue virtuelle Maschine zu erstellen.  
 Der Name für die virtuelle Maschine ist frei wählbar und hat keinen Einfluss auf den weiteren Verlauf, um möglich 
 auftretende Fehler zu vermeiden, empfehlen wir in dem Namen nur Buchstaben und Zahlen zu verwenden und auf Leerzeichen
-zu verzichten. <br>
+zu verzichten.  
 Der Ordner für die virtuellen Maschinen sollte bei dem standard Ordner bleiben, außer Sie haben schon von
 früheren Maschinen den Ordner an eine andere Stelle verlegt.
 
@@ -30,7 +30,7 @@ auf `Ubuntu (64-Bit)`.
 Final sollte die VM Konfiguration ungefähr wie folgt aussehen:
 
 <figure markdown>
-  ![](../img/virtual_box/linux-mint-config.png){ loading=lazy width=600px }
+  ![](../img/virtualbox/linux-mint-config.png){ loading=lazy width=600px }
 </figure>
 
 
@@ -42,17 +42,17 @@ müssen, ist <kbd>&#x21b5;</kbd> (Enter) drücken.
 Nun sollte das System hochfahren.
 Oben Links in der Ecke sollte sich eine CD mit dem Schriftzug `Install Linux Mint` befinden. Dieses Icon können Sie wie
 ein Programm starten. Nach einem Doppelklick und kurzer Wartezeit sollte sich ein Fenster öffnen, wo Sie zuerst die 
-gewünschte Sprache auswählen können. Danach folgt das Keyboard Layout. <br> 
+gewünschte Sprache auswählen können. Danach folgt das Keyboard Layout.   
 Die nächsten drei Fenster können Sie einfach durchklicken, ohne Änderungen vorzunehmen.
-Die nächsten Fenster zum Setzen der Zeitzone und der Konfiguration des Benutzers sollten selbsterklärend sein. <br>
-Im nächsten Schritt wird das System installiert. Das kann von Gerät zu Gerät eine Zeit dauern (3 - 8 Minuten). <br>
+Die nächsten Fenster zum Setzen der Zeitzone und der Konfiguration des Benutzers sollten selbsterklärend sein.  
+Im nächsten Schritt wird das System installiert. Das kann von Gerät zu Gerät eine Zeit dauern (3 - 8 Minuten).  
 Wenn das System fertig installiert ist, können Sie die VM neu starten. Dabei ist aber zu beachten, dass man davor die 
 Installationsdatei entfernen muss. Diese findet man, wenn man in Virtual Box in die Einstellungen der Maschine geht, 
 dann auf Speicher/Storage und dort die `{VMName}.vdi` mit dem Icon am unteren Ende des Fensters löscht.
 
 > TODO @Luis Bild von dem Icon zeigen
 <figure markdown>
-  ![](../img/virtual_box/delete-vdi.png){ loading=lazy width=200px }
+  ![](../img/virtualbox/delete-vdi.png){ loading=lazy width=200px }
 </figure>
 
 ### Installation Wireshark

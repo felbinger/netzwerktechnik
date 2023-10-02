@@ -2,13 +2,15 @@
 
 Dies hier ist eine Informationssammlung, welche grundlegendes Wissen der Netzwerktechnik erklären soll. Wir haben dazu 
 entschlossen diese Website zu erstellen, da uns eine Gruppe von Menschen nach Erklärungen zu gewissen Themen der 
-Netzwerktechnik gefragt hat und wir diese Erklärungen für alle zur Verfügung stellen wollten. <br>
-Deswegen scheuen Sie sich nicht für Fragen oder Anregungen ein Issue zu erstellen. <br>
+Netzwerktechnik gefragt hat und wir diese Erklärungen für alle zur Verfügung stellen wollten.  
+Deswegen scheuen Sie sich nicht für Fragen oder Anregungen ein Issue zu erstellen.  
 
 Die Website kann hier gefunden werden: https://netzwerktechnik.pages.dev
 
-
 ## TODO
+### Einrichtung
+* (für später, dynamisches Routing): Bird2 (Alpine Linux oder NixOS?)
+* (für später): pfSense / OPNsense / OpenWRT
 
 ### Grundlagen
 * Ethernet
