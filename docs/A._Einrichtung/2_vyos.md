@@ -19,6 +19,6 @@
   Path: `/tmp/vyos15serial`
 - `socat UNIX-CONNECT:/tmp/vyos13serial -,b57600`
 - Autocompletion aktivieren:
-  <kbd>STRG<kbd> + <kbd>z<kbd> (background)
-  `stty raw -echo` <kbd>ENTER<kbd> (alle tastatureingaben direkt an serielle konsole senden, nicht lokal verarbeiten)
-  `fg` <kbd>ENTER<kbd><kbd>ENTER<kbd> (foreground)
+  <kbd>STRG</kbd> + <kbd>z</kbd> (background)
+  `stty raw -echo` <kbd>ENTER</kbd> (alle tastatureingaben direkt an serielle konsole senden, nicht lokal verarbeiten)
+  `fg` <kbd>ENTER</kbd><kbd>ENTER</kbd> (foreground)

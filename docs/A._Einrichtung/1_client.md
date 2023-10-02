@@ -12,7 +12,7 @@ Hierfür kann beispielsweise das Betriebssystem Linux Mint mit dem Desktopenviro
 
 Nachdem die virtuelle Maschine neu gestartet wurde, kann Wireshark über den Paketmanager installiert werden:
 ```shell
-apt install -y wireshark
+sudo apt install -y wireshark
 ```
 
 > TODO @Luis Erläutern, dass aufzeichnen für non-root nutzer erlaubt werden soll 
@@ -29,4 +29,4 @@ Multicast) bestimmt sind.
 
 > TODO @Luis Bild der VirtualBox Netzwerkkonfiguration
 
-> TODO @Luis Verwendung von Wireshark grob erklären, im ersten Grundlagenkapitel wird das ganze an Ethernet gezeigt. 
+> TODO @Luis Verwendung von Wireshark grob erklären, im ersten Grundlagenkapitel wird das Ganze an Ethernet gezeigt. 
