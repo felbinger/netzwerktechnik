@@ -13,12 +13,12 @@
 - nach dem booten mit admin (leeres password) einloggen und passwort ändern
 
 ### Serielle Konsole konfigurieren
-- Enable Serial Port:
-  Port Mode: Host Pipe,
-  Disable: Connect to existing pipe/socket,
-  Path: `/tmp/vyos15serial`
+- Enable Serial Port:  
+  Port Mode: Host Pipe,  
+  Disable: Connect to existing pipe/socket,  
+  Path: `/tmp/vyos15serial`  
 - `socat UNIX-CONNECT:/tmp/vyos13serial -,b57600`  - TODO braucht ggf. andere werte?
-- Autocompletion aktivieren:
-  <kbd>STRG<kbd> + <kbd>z<kbd> (background)
-  `stty raw -echo` <kbd>ENTER<kbd> (alle tastatureingaben direkt an serielle konsole senden, nicht lokal verarbeiten)
-  `fg` <kbd>ENTER<kbd><kbd>ENTER<kbd> (foreground)
+- Autocompletion aktivieren:  
+  <kbd>STRG</kbd> + <kbd>z</kbd> (background)  
+  `stty raw -echo` <kbd>ENTER</kbd> (alle tastatureingaben direkt an serielle konsole senden, nicht lokal verarbeiten)  
+  `fg` 2x <kbd>&#x21b5;</kbd> (Enter) (foreground)
