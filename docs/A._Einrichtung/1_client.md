@@ -1,11 +1,10 @@
-# 1. Clients
+# 1. Client
 
 Um die Pakete in den internen Netzwerken mittels Wireshark passiv betrachten zu können setzen wir uns auch noch eine 
 Client VM auf.
 
 Dies ist nützlich, damit wir besser sehen können, was wir genau konfiguriert haben und wie die einzelnen Pakete in der
 Praxis genau aussehen.
-
 
 ### Installation der ISO-Datei
 Hierfür kann beispielsweise das Betriebssystem Linux Mint mit dem Desktopenvironment Mate verwendet werden, welches 

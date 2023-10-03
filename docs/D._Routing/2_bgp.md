@@ -1,7 +1,8 @@
 # 2. Border Gateway Protocol
 
 ## Theoretische Grundlagen
-Ein autonomes System (AS) ist eine Gruppe von IP-Netzen und Routern, die unter einer einzigen administrativen Kontrolle stehen und Routeninformationen über das Internet austauschen. Es wird durch eine eindeutige ASN (Autonomous System Number) identifiziert.
+!!! info "Was ist ein autonomes System?"
+    Ein autonomes System (AS) ist eine Gruppe von IP-Netzen und Routern, die unter einer einzigen administrativen Kontrolle stehen und Routeninformationen über das Internet austauschen. Es wird durch eine eindeutige ASN (Autonomous System Number) identifiziert.
 
 ## Szenario #1
 
@@ -35,7 +36,7 @@ Nun kann validiert werden, ob die BGP Session Established ist:
 
 === "VyOS"
     ```sh
-    run show ip bgp sum
+    run show ip bgp summary
     ```
     ```
     IPv4 Unicast Summary (VRF default):

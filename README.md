@@ -1,28 +1,33 @@
 # Netzwerktechnik
 
-Dies hier ist eine Informationssammlung, welche grundlegendes Wissen der Netzwerktechnik erklären soll. Wir haben dazu 
-entschlossen diese Website zu erstellen, da uns eine Gruppe von Menschen nach Erklärungen zu gewissen Themen der 
-Netzwerktechnik gefragt hat und wir diese Erklärungen für alle zur Verfügung stellen wollten.  
-Deswegen scheuen Sie sich nicht für Fragen oder Anregungen ein Issue zu erstellen.  
+In diesem Repository finden Sie eine Sammlung von grundlegenden Informationen zur praktischen Netzwerktechnik anhand
+verschiedener Router-Betriebssysteme wie [VyOS](https://docs.vyos.io/) und
+Mikrotik [RouterOS](https://help.mikrotik.com/docs/display/ROS/RouterOS).
 
-Die Website kann hier gefunden werden: https://netzwerktechnik.pages.dev
+Die Motivation für die Erstellung dieser Informationssammlung, lag darin, dass uns fortlaufend Anfragen erreichten, die
+Erklärungen zu verschiedenen Themen der Netzwerktechnik suchten. Darüber hinaus wollen wir unsere eigenen Kenntnisse
+vertiefen, während wir diese Informationssammlung erweitern.
+
+## Contribution Guidelines
+- Relevante theoretische Inhalte werden mit einem [Admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) vom Typ info dargestellt.
 
 ## TODO
 ### Einrichtung
-* (für später, dynamisches Routing): Bird2 (Alpine Linux oder NixOS?)
+* (für später, dynamisches Routing): Bird2 (Alpine Linux)
 * (für später): pfSense / OPNsense / OpenWRT
 
 ### Grundlagen
 * Ethernet
 * Virtual LAN (IEEE 802.1q)
 * QinQ (IEEE 802.1ad)
-* IPv4 Adressvergabe
-  * Statisch
-  * DHCPv4
-* IPv6 Adressvergabe
-  * Statisch
-  * DHCPv6
-  * SLAAC
+* IP Adressvergabe
+  * IPv4 Adressvergabe
+    * Statisch (IPv4 Adresse, Netzmaske, ggf. Gateway, ggf. DNS-Server )
+    * DHCPv4 (automatisch, DHCP Server vergibt Adressen)
+  * IPv6 Adressvergabe
+    * Statisch
+    * DHCPv6 (stateful, DHCP Server vergibt Adressen)
+    * Stateless Address Autoconfiguration (SLAAC), EUI64, Privacy Extension
 
 ### Tunnel
 * Generic Routing Encapsulation

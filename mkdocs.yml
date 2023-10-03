@@ -1,16 +1,16 @@
-site_name: "Netzwerktechnik"
+site_name: Netzwerktechnik
 site_url: https://netzwerktechnik.pages.dev/
 repo_name: felbinger/netzwerktechnik
 repo_url: https://github.com/felbinger/netzwerktechnik/
-site_description: "Netzwerktechnik"
+site_description: Netzwerktechnik
 site_author: https://github.com/felbinger
 edit_uri: https://github.dev/felbinger/netzwerktechnik/blob/main/docs
 
 theme:
-  name: 'material'
+  name: material
   palette:
     - scheme: slate
-      primary: 'blue'
+      primary: blue
 
   font:
     text: Roboto
@@ -27,7 +27,10 @@ theme:
     - navigation.sections
 
 markdown_extensions:
-  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.superfences  # allow large code blocks (```) in tabbed blocks
+  - admonition  # see https://squidfunk.github.io/mkdocs-material/reference/admonitions/
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list   # image resize and lazy loading
