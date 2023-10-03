@@ -1,7 +1,7 @@
 # 1. Clients
 
-Um die Pakete in den internen Netzwerken mittels Wireshark passiv betrachten zu können setzen wir uns auch noch eine 
-Client VM auf.
+Um die Pakete in den internen Netzwerken mittels Wireshark passiv betrachten zu können setzen wir uns eine Client 
+VM auf.
 
 Dies ist nützlich, damit wir besser sehen können, was wir genau konfiguriert haben und wie die einzelnen Pakete in der
 Praxis genau aussehen.
@@ -12,7 +12,6 @@ Hierfür kann beispielsweise das Betriebssystem Linux Mint mit dem Desktopenviro
 [hier](https://linuxmint.com/download.php) heruntergeladen werden kann (Welcher Mirror zum Herunterladen verwendet wird,
 macht keinen wesentlichen Unterschied).
 
-> TODO @Luis Beschreiben das VM erstellt wird und Linux Mint installiert wird
 
 ### Erstellen der VM
 Wenn man das heruntergeladene ISO Image jetzt als virtuelle Maschine starten will, öffnet man zuerst die Ansicht in 
