@@ -12,23 +12,11 @@ vertiefen, während wir diese Informationssammlung erweitern.
 - Relevante theoretische Inhalte werden mit einem [Admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) vom Typ info dargestellt.
 
 ## TODO
-Videos + asciinema cast (siehe admin guide: https://github.com/felbinger/AdminGuide/blob/fd16537472d988f01ec3d13619698a44f21e7eb3/mkdocs.yml, https://github.com/felbinger/AdminGuide/blob/fd16537472d988f01ec3d13619698a44f21e7eb3/docs/cast/postinstall.cast)
+(Videos) + asciinema cast (siehe admin guide: https://github.com/felbinger/AdminGuide/blob/fd16537472d988f01ec3d13619698a44f21e7eb3/mkdocs.yml, https://github.com/felbinger/AdminGuide/blob/fd16537472d988f01ec3d13619698a44f21e7eb3/docs/cast/postinstall.cast)
+
 ### Einrichtung
 * (für später, dynamisches Routing): Bird2 (Alpine Linux)
 * (für später): pfSense / OPNsense / OpenWRT
-
-### Grundlagen
-* Ethernet
-* Virtual LAN (IEEE 802.1q)
-* QinQ (IEEE 802.1ad)
-* IP Adressvergabe
-  * IPv4 Adressvergabe
-    * Statisch (IPv4 Adresse, Netzmaske, ggf. Gateway, ggf. DNS-Server )
-    * DHCPv4 (automatisch, DHCP Server vergibt Adressen)
-  * IPv6 Adressvergabe
-    * Statisch
-    * DHCPv6 (stateful, DHCP Server vergibt Adressen)
-    * Stateless Address Autoconfiguration (SLAAC), EUI64, Privacy Extension
 
 ### Tunnel
 * Generic Routing Encapsulation
