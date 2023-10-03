@@ -1,12 +1,13 @@
 # 2. Border Gateway Protocol
 
 ## Theoretische Grundlagen
-Ein autonomes System (AS) ist eine Gruppe von IP-Netzen und Routern, die unter einer einzigen administrativen Kontrolle stehen und Routeninformationen über das Internet austauschen. Es wird durch eine eindeutige ASN (Autonomous System Number) identifiziert.
+!!! info "Was ist ein autonomes System?"
+    Ein autonomes System (AS) ist eine Gruppe von IP-Netzen und Routern, die unter einer einzigen administrativen Kontrolle stehen und Routeninformationen über das Internet austauschen. Es wird durch eine eindeutige ASN (Autonomous System Number) identifiziert.
 
 ## Szenario #1
 
 <figure markdown>
-  ![](../img/routing-bgp-two.drawio.svg){ loading=lazy width="500px" }
+  ![](../img/routing/bgp/scenario-1.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 === "VyOS"
@@ -35,20 +36,19 @@ Nun kann validiert werden, ob die BGP Session Established ist:
 
 === "VyOS"
     ```sh
-    run show ip bgp sum
+    run show ip bgp summary
     ```
     ```
-    IPv4 Unicast Summary:
+    IPv4 Unicast Summary (VRF default):
     BGP router identifier 10.0.0.1, local AS number 65000 vrf-id 0
-    BGP table version 4
-    RIB entries 3, using 576 bytes of memory
-    Peers 1, using 21 KiB of memory
+    BGP table version 0
+    RIB entries 0, using 0 bytes of memory
+    Peers 1, using 20 KiB of memory
 
-    Neighbor    V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt
-    10.0.0.2    4      65100       284       284        0    0    0 04:37:12            0        0
+    Neighbor        V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd   PfxSnt Desc
+    10.0.0.2        4      65100         3         3        0    0    0 00:00:17            0        0 N/A
 
     Total number of neighbors 1
-
     ```
 
 
@@ -57,7 +57,15 @@ Nun kann validiert werden, ob die BGP Session Established ist:
     routing/bgp/session/print
     ```
     ```
-    ...
+    Flags: E - established 
+    0 E name="ros-vyos-1" 
+        remote.address=10.0.0.1 .as=65000 .id=10.0.0.1 .capabilities=mp,rr,em,gr,as4,ap,err,llgr,fqdn .messages=1 .bytes=23 
+        .gr-time=120 .eor=ip 
+        local.address=10.0.0.2 .as=65100 .id=10.0.0.2 .capabilities=mp,rr,gr,as4 .messages=1 .bytes=19 .eor="" 
+        output.procid=20 
+        input.procid=20 ebgp 
+        hold-time=3m keepalive-time=1m uptime=6s460ms last-started=2023-10-03 09:42:43 prefix-count=0 
+
     ```
 
 ## Szenario #2
@@ -68,7 +76,7 @@ Die äußeren Router (AS 65100 & AS 65200) announcen jeweils ein /24er IPv4 Prä
 Die beiden äußeren Router verfügen über BGP Import- und Exportfilter, die verhindern das falsche Präfixe an AS 65000 announciert werden und sicherstellen, dass nur Präfixe importiert werden die auf der Präfixliste stehen.
 
 <figure markdown>
-  ![](../img/routing-bgp-three.drawio.svg){ loading=lazy width="600px" }
+  ![](../img/routing/bgp/scenario-2.drawio.svg){ loading=lazy width="600px" }
 </figure>
 
 === "VyOS 1.3"
