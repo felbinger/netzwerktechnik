@@ -33,7 +33,9 @@ zuzugreifen.
 Hierfür navigieren wir zuerst in VirtualBox zum Network Manager (Datei -> Tools -> Network Manager) und
 erstellen dort ein neues Host-only Netzwerk:
 
-![](../img/setup/virtualbox/network-manager-create-host-only-network.png)
+<figure markdown>
+  ![](../img/setup/virtualbox/network-manager-create-host-only-network.png){ loading=lazy }
+</figure>
 
 Anschließend erstellen wir eine neue virtuelle Maschine, um ein weiteres VyOS zu installieren. Diesmal fügen wir neben
 des "Internal Networks" eine zweite Netzwerkschnittstelle hinzu, die wir auf den Typ "Host-only Adapter" stellen und das
@@ -43,7 +45,9 @@ In den erweiterten Einstellungen setzen wir für den
 Promiscuous Mode auf "Allow All". Dadurch verarbeitet die Netzwerkkarte der VM alle empfangenen Frames, anstatt nur die
 Frames, die an die eigene MAC-Adresse adressiert sind.
 
-![](../img/setup/virtualbox/monitor-vm-host-only-adapter.png)
+<figure markdown>
+  ![](../img/setup/virtualbox/monitor-vm-host-only-adapter.png){ loading=lazy }
+</figure>
 
 Danach wird die VyOS Installation durchgeführt (`install image`, analog zum Router). Nachdem die VM neu gestartet wurde,
 wird VyOS konfiguriert:
@@ -69,15 +73,22 @@ Um Wireshark SSH Remote Capture zu konfigurieren, öffnen Sie Wireshark auf Ihre
 Capture-Options-Menü. Wählen Sie die Option "Remote Capture" aus. Geben Sie im Remote SSH Capture Dialog die IP-Adresse
 des entfernten Servers (z. B. 192.168.56.2) und bei SSH-Port 22 ein.
 
-![](../img/setup/wireshark/ssh-remote-capture-server-tab.png)
+<figure markdown>
+  ![](../img/setup/wireshark/ssh-remote-capture-server-tab.png){ loading=lazy }
+</figure>
+
 
 Im "Authentication"-Tab tragen Sie den Benutzernamen des entfernten Servers (`vyos`) und das gewählte Passwort ein. 
 
-![](../img/setup/wireshark/ssh-remote-capture-authentication-tab.png)
+<figure markdown>
+  ![](../img/setup/wireshark/ssh-remote-capture-authentication-tab.png){ loading=lazy }
+</figure>
 
 Im "Capture"-Tab wählen Sie das gewünschte Netzwerkinterface auf dem entfernten Server aus (z. B. eth0) und aktivieren
 Sie das Kontrollkästchen "Use sudo on the remote machine"
 
-![](../img/setup/wireshark/ssh-remote-capture-capture-tab.png)
+<figure markdown>
+  ![](../img/setup/wireshark/ssh-remote-capture-capture-tab.png){ loading=lazy }
+</figure>
 
 Nachdem Sie die Einstellungen vorgenommen haben, klicken Sie auf "Start", um die Remote-Capture-Sitzung zu beginnen.

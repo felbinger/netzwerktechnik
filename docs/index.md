@@ -7,5 +7,5 @@ Vermittlung theoretischer Grundlagen, da diese bereits vorhanden sein sollten, u
 
 Um ein besseres Verständnis für die Beispiele zu entwickeln, empfehlen wir, diese praktisch nachzuvollziehen. Hierzu
 können Sie virtuelle Maschinen verwenden, auf denen die Router-Betriebssysteme installiert sind. Die Einrichtung dieser
-wird im Kapitel [A. Einrichtung](./A._Einrichtung/1_client/) mit VirtualBox für die Host-Betriebssysteme Windows und 
+wird im Kapitel [A. Einrichtung](./A._Einrichtung/0_intro/) mit VirtualBox für die Host-Betriebssysteme Windows und 
 Linux erläutert.
