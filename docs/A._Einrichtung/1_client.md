@@ -42,17 +42,17 @@ müssen, ist <kbd>&#x21b5;</kbd> (Enter) drücken.
 Nun sollte das System hochfahren.
 Oben Links in der Ecke sollte sich eine CD mit dem Schriftzug `Install Linux Mint` befinden. Dieses Icon können Sie wie
 ein Programm starten. Nach einem Doppelklick und kurzer Wartezeit sollte sich ein Fenster öffnen, wo Sie zuerst die 
-gewünschte Sprache auswählen können. Danach folgt das Keyboard Layout.   
-Die nächsten drei Fenster können Sie einfach durchklicken, ohne Änderungen vorzunehmen.
+gewünschte Sprache auswählen können. Danach folgt das Keyboard Layout.  
+Die nächsten drei Fenster können Sie einfach durchklicken, ohne Änderungen vorzunehmen.  
 Die nächsten Fenster zum Setzen der Zeitzone und der Konfiguration des Benutzers sollten selbsterklärend sein.  
 Im nächsten Schritt wird das System installiert. Das kann von Gerät zu Gerät eine Zeit dauern (3 - 8 Minuten).  
 Wenn das System fertig installiert ist, können Sie die VM neu starten. Dabei ist aber zu beachten, dass man davor die 
-Installationsdatei entfernen muss. Diese findet man, wenn man in Virtual Box in die Einstellungen der Maschine geht, 
-dann auf Speicher/Storage und dort die `{VMName}.vdi` mit dem Icon am unteren Ende des Fensters löscht.
+Installationsdatei entfernen muss. Dies kann man machen, indem man in Virtual Box in die Einstellungen der Maschine 
+geht, dann auf Speicher/Storage und dort die `Unattended-(...).iso.viso` mit dem Icon am unteren Ende des Fensters 
+löscht.
 
-> TODO @Luis Bild von dem Icon zeigen
 <figure markdown>
-  ![](../img/virtualbox/delete-vdi.png){ loading=lazy width=200px }
+  ![](../img/virtualbox/delete-iso.png){ loading=lazy width=200px }
 </figure>
 
 ### Installation Wireshark
