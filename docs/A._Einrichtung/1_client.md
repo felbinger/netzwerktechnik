@@ -61,7 +61,16 @@ Nachdem die virtuelle Maschine neu gestartet wurde, kann Wireshark über den Pak
 sudo apt install -y wireshark
 ```
 
-> TODO @Luis Erläutern, dass aufzeichnen für non-root nutzer erlaubt werden soll 
+Damit man Wireshark auch ohne Admin komplett verwenden kann, muss man noch folgenden Befehl im Terminal ausführen:
+
+```shell
+sudo usermod -aG wireshark $USER
+```
+
+Nach einem Logout und erneutem Login ist Wireshark fertig installiert.
+
+
+### Konfiguration Wireshark
 
 Damit unser Client keine eigenen Pakete in die internen Netzwerke unserer Router sendet, deaktivieren wir die IPv4 und 
 IPv6 Netzwerkkonfiguration im NetworkManager.
@@ -69,10 +78,25 @@ IPv6 Netzwerkkonfiguration im NetworkManager.
 > TODO @Luis Bilder für Linux Mint mit Mate
 
 Anschließend fahren wir die virtuelle Maschine herunter und konfigurieren das Netzwerkinterface auf unser internes 
-Netzwerk um. Den "Promiscuous Mode" setzen wir auf "Allow All", sodass die virtuelle Netzwerkkarte unserer virtuellen
+Netzwerk um. Den `Promiscuous Mode` setzen wir auf `Allow All`, sodass die virtuelle Netzwerkkarte unserer virtuellen
 Maschine nicht nur die Pakete empfängt, die für die eigene MAC Adresse oder alle Teilnehmer im Netz (Broadcast / 
 Multicast) bestimmt sind.
 
 > TODO @Luis Bild der VirtualBox Netzwerkkonfiguration
 
+
+### Wireshark Grundlagen
+
 > TODO @Luis Verwendung von Wireshark grob erklären, im ersten Grundlagenkapitel wird das Ganze an Ethernet gezeigt. 
+
+
+### Optional: Bildschirmauflösung anpassen
+
+Momentan sollte die VM in einem ziemlich kleinen Fenster sein und sich nicht dem Virtual Box Fenster anpassen. Um 
+die optimale Anpassung zu konfigurieren braucht man 2 Schritte:
+
+#### 1. Download Guest Additions 
+Um die Guest Additions herunterzuladen, geht man oben links in der VM auf Geräte/Devices und wählt dort den letzten
+Punkt aus.
+
+> TODO @Luis Bild von Guest Addition Download Button
