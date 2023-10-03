@@ -19,12 +19,8 @@ dem Internal Network zu analysieren.
   ![](../img/setup-wireshark.drawio.svg){ loading=lazy width=600px }
 </figure>
 
-## VirtualBox
-Um VirtualBox zu installieren, besuchen Sie die offizielle Website [virtualbox.org](https://www.virtualbox.org/), laden
-Sie die passende Version für Ihr Betriebssystem herunter und führen Sie den Installationsprozess aus.
-
 ## Router VM's
-Nun folgt die Konfiguration der Router, siehe [1. VyOS](../1_vyos/) und [2. Mikrotik RouterOS](../2_routeros/).
+Erstellen Sie zunächst die virtuellen Maschinen der Router, siehe [1. VyOS](../1_vyos/) und [2. Mikrotik RouterOS](../2_routeros/).
 
 ## "Monitor VM"
 Abschließend richten wir die "Monitor-VM" ein, die es uns ermöglicht, mit Wireshark auf das interne Netzwerk
@@ -90,5 +86,3 @@ Sie das Kontrollkästchen "Use sudo on the remote machine"
 <figure markdown>
   ![](../img/setup/wireshark/ssh-remote-capture-capture-tab.png){ loading=lazy }
 </figure>
-
-Nachdem Sie die Einstellungen vorgenommen haben, klicken Sie auf "Start", um die Remote-Capture-Sitzung zu beginnen.
