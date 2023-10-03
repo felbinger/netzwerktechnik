@@ -12,6 +12,6 @@ Hierfür können Sie virtuelle Maschinen nutzen, auf denen die Router-Betriebssy
 Im Kapitel [A. Einrichtung](./A._Einrichtung/1_client/) wird die Installation der Lab Umgebung mit VirtualBox erläutert.
 
 <figure markdown>
-  ![](./img/virtualbox.drawio.svg){ loading=lazy width=500px }
+  ![](./img/vms.drawio.svg){ loading=lazy width=500px }
   <figcaption>Schematische Darstellung der einzelnen virtuellen Maschinen</figcaption>
 </figure>

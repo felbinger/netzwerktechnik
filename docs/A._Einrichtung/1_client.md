@@ -30,7 +30,7 @@ auf `Ubuntu (64-Bit)`.
 Final sollte die VM Konfiguration ungefähr wie folgt aussehen:
 
 <figure markdown>
-  ![](../img/virtualbox/linux-mint-config.png){ loading=lazy width=600px }
+  ![](../img/setup/virtualbox/linux-mint-config.png){ loading=lazy width=600px }
 </figure>
 
 
@@ -50,10 +50,6 @@ Wenn das System fertig installiert ist, können Sie die VM neu starten. Dabei is
 Installationsdatei entfernen muss. Dies kann man machen, indem man in Virtual Box in die Einstellungen der Maschine 
 geht, dann auf Speicher/Storage und dort die `Unattended-(...).iso.viso` mit dem Icon am unteren Ende des Fensters 
 löscht.
-
-<figure markdown>
-  ![](../img/virtualbox/delete-iso.png){ loading=lazy width=200px }
-</figure>
 
 ### Installation Wireshark
 Nachdem die virtuelle Maschine neu gestartet wurde, kann Wireshark über den Paketmanager installiert werden:
