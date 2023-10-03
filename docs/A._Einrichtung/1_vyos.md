@@ -1,4 +1,4 @@
-# 2. VyOS
+# 1. VyOS
 
 VyOS ist ein CLI basiertes Open-Source-Netzwerk-Betriebssystem, das auf dem Debian GNU/Linux basiert. 
 Die aus den Nightly Build resultierenden ISO's (Rolling Release) können direkt von der [offiziellen Website](https://vyos.net/get/nightly-builds/) heruntergeladen werden.

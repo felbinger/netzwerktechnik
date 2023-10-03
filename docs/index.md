@@ -9,13 +9,3 @@ Um ein besseres Verständnis für die Beispiele zu entwickeln, empfehlen wir, di
 können Sie virtuelle Maschinen verwenden, auf denen die Router-Betriebssysteme installiert sind. Die Einrichtung dieser
 wird im Kapitel [A. Einrichtung](./A._Einrichtung/1_client/) mit VirtualBox für die Host-Betriebssysteme Windows und 
 Linux erläutert.
-
-<figure markdown>
-  ![](./img/vms.drawio.svg){ loading=lazy width=500px }
-  <figcaption>Schematische Darstellung der einzelnen virtuellen Maschinen</figcaption>
-</figure>
-
-<figure markdown>
-  ![](./img/vms2.drawio.svg){ loading=lazy width=600px }
-  <figcaption>Schematische Darstellung der einzelnen virtuellen Maschinen</figcaption>
-</figure>

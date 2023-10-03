@@ -1,4 +1,4 @@
-# 3. Mikrotik RouterOS
+# 2. Mikrotik RouterOS
 
 * routeros (kurze erklärung was es ist, chr ohne lizenz: max 1mbit/s, für testzwecke ausreichend, lizenzmodell erklären)
 
