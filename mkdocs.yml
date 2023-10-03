@@ -7,6 +7,8 @@ site_author: https://github.com/felbinger
 edit_uri: https://github.dev/felbinger/netzwerktechnik/blob/main/docs
 
 theme:
+  logo: img/favicon.png
+  favicon: img/favicon.png
   name: material
   palette:
     - scheme: slate
