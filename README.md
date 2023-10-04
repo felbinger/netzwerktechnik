@@ -12,17 +12,18 @@ vertiefen, während wir diese Informationssammlung erweitern.
 - Relevante theoretische Inhalte werden mit einem [Admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) vom Typ info dargestellt.
 
 ## TODO
-(Videos) + asciinema cast (siehe admin guide: https://github.com/felbinger/AdminGuide/blob/fd16537472d988f01ec3d13619698a44f21e7eb3/mkdocs.yml, https://github.com/felbinger/AdminGuide/blob/fd16537472d988f01ec3d13619698a44f21e7eb3/docs/cast/postinstall.cast)
+- Think about adding (more) videos / asciinema casts
+  - We're currently using really old versions of asciinema player, because the latest version didn't work... 
 
 ### Einrichtung
 * (für später, dynamisches Routing): Bird2 (Alpine Linux)
 * (für später): pfSense / OPNsense / OpenWRT
 
 ### Tunnel
-* Generic Routing Encapsulation
-* Layer 2 Tunneling Protocol
-* IPsec
 * Point-to-Point Tunneling Protocol
+* Layer 2 Tunneling Protocol
+* Generic Routing Encapsulation
+* IPsec
 * Virtual Extensible LAN / Generic Network Virtualization Encapsulation
 * Wireguard
 * (Secure-Socket Tunneling Protocol)

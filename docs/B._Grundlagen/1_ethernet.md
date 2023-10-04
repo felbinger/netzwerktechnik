@@ -1,7 +1,13 @@
 # 1. Ethernet
 
+!!! info
+    Ethernet ist das meist verwendete OSI-Layer 2 Protokoll, es ermöglicht die Kommunikation von Geräten in einem 
+    lokalen Netzwerk. Ethernet verwendet MAC-Adressen (Media Access Control-Adressen), um Geräte in einem Netzwerk 
+    eindeutig zu identifizieren und den Datenverkehr zwischen ihnen zu steuern.
+
+
 <figure markdown>
-  ![](../img/basics/ethernet.drawio.svg){ loading=lazy width="500px" }
+  ![](../assets/img/basics/ethernet.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 === "VyOS"

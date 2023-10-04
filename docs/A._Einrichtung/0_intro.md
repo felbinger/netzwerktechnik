@@ -5,7 +5,7 @@ eine Verbindung miteinander verbunden sind. Dies kann in VirtualBox durch die Ve
 [Internal Network](https://www.virtualbox.org/manual/ch06.html#network_internal) erreicht werden.
 
 <figure markdown>
-  ![](../img/setup.drawio.svg){ loading=lazy width=600px }
+  ![](../assets/img/setup.drawio.svg){ loading=lazy width=600px }
 </figure>
 
 Außerdem planen wir die Einrichtung einer virtuellen Maschine (VM), die es ermöglicht, auf das virtuelle Netzwerk
@@ -16,7 +16,7 @@ per SSH von unserem PC aus verbinden. Auf diese Weise können wir Wireshark SSH 
 dem Internal Network zu analysieren.
 
 <figure markdown>
-  ![](../img/setup-wireshark.drawio.svg){ loading=lazy width=600px }
+  ![](../assets/img/setup-wireshark.drawio.svg){ loading=lazy width=600px }
 </figure>
 
 ## Router VM's
@@ -30,7 +30,7 @@ Hierfür navigieren wir zuerst in VirtualBox zum Network Manager (Datei -> Tools
 erstellen dort ein neues Host-only Netzwerk:
 
 <figure markdown>
-  ![](../img/setup/virtualbox/network-manager-create-host-only-network.png){ loading=lazy }
+  ![](../assets/img/setup/virtualbox/network-manager-create-host-only-network.png){ loading=lazy }
 </figure>
 
 Anschließend erstellen wir eine neue virtuelle Maschine, um ein weiteres VyOS zu installieren. Diesmal fügen wir neben
@@ -42,7 +42,7 @@ Promiscuous Mode auf "Allow All". Dadurch verarbeitet die Netzwerkkarte der VM a
 Frames, die an die eigene MAC-Adresse adressiert sind.
 
 <figure markdown>
-  ![](../img/setup/virtualbox/monitor-vm-host-only-adapter.png){ loading=lazy }
+  ![](../assets/img/setup/virtualbox/monitor-vm-host-only-adapter.png){ loading=lazy }
 </figure>
 
 Danach wird die VyOS Installation durchgeführt (`install image`, analog zum Router). Nachdem die VM neu gestartet wurde,
@@ -70,19 +70,19 @@ Capture-Options-Menü. Wählen Sie die Option "Remote Capture" aus. Geben Sie im
 des entfernten Servers (z. B. 192.168.56.2) und bei SSH-Port 22 ein.
 
 <figure markdown>
-  ![](../img/setup/wireshark/ssh-remote-capture-server-tab.png){ loading=lazy }
+  ![](../assets/img/setup/wireshark/ssh-remote-capture-server-tab.png){ loading=lazy }
 </figure>
 
 
 Im "Authentication"-Tab tragen Sie den Benutzernamen des entfernten Servers (`vyos`) und das gewählte Passwort ein. 
 
 <figure markdown>
-  ![](../img/setup/wireshark/ssh-remote-capture-authentication-tab.png){ loading=lazy }
+  ![](../assets/img/setup/wireshark/ssh-remote-capture-authentication-tab.png){ loading=lazy }
 </figure>
 
 Im "Capture"-Tab wählen Sie das gewünschte Netzwerkinterface auf dem entfernten Server aus (z. B. eth0) und aktivieren
 Sie das Kontrollkästchen "Use sudo on the remote machine"
 
 <figure markdown>
-  ![](../img/setup/wireshark/ssh-remote-capture-capture-tab.png){ loading=lazy }
+  ![](../assets/img/setup/wireshark/ssh-remote-capture-capture-tab.png){ loading=lazy }
 </figure>

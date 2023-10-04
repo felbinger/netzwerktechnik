@@ -7,8 +7,8 @@ site_author: https://github.com/felbinger
 edit_uri: https://github.dev/felbinger/netzwerktechnik/blob/main/docs
 
 theme:
-  logo: img/favicon.png
-  favicon: img/favicon.png
+  logo: assets/img/favicon.png
+  favicon: assets/img/favicon.png
   name: material
   palette:
     - scheme: slate
@@ -41,3 +41,9 @@ markdown_extensions:
 plugins:
   - git-revision-date
   - git-revision-date-localized
+
+extra_css:
+  - assets/css/asciinema-player.css
+
+extra_javascript:
+  - assets/js/asciinema-player.min.js

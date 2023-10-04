@@ -7,7 +7,7 @@
 ## Szenario #1
 
 <figure markdown>
-  ![](../img/routing/bgp/scenario-1.drawio.svg){ loading=lazy width="500px" }
+  ![](../assets/img/routing/bgp/scenario-1.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 === "VyOS"
@@ -76,7 +76,7 @@ Die äußeren Router (AS 65100 & AS 65200) announcen jeweils ein /24er IPv4 Prä
 Die beiden äußeren Router verfügen über BGP Import- und Exportfilter, die verhindern das falsche Präfixe an AS 65000 announciert werden und sicherstellen, dass nur Präfixe importiert werden die auf der Präfixliste stehen.
 
 <figure markdown>
-  ![](../img/routing/bgp/scenario-2.drawio.svg){ loading=lazy width="600px" }
+  ![](../assets/img/routing/bgp/scenario-2.drawio.svg){ loading=lazy width="600px" }
 </figure>
 
 === "VyOS 1.3"
