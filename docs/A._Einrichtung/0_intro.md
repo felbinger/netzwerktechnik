@@ -5,7 +5,7 @@ eine Verbindung miteinander verbunden sind. Dies kann in VirtualBox durch die Ve
 [Internal Network](https://www.virtualbox.org/manual/ch06.html#network_internal) erreicht werden.
 
 <figure markdown>
-  ![](../assets/img/setup.drawio.svg){ loading=lazy width=600px }
+  ![](../assets/img/setup/setup.drawio.svg){ loading=lazy width=600px }
 </figure>
 
 Außerdem planen wir die Einrichtung einer virtuellen Maschine (VM), die es ermöglicht, auf das virtuelle Netzwerk
@@ -16,7 +16,7 @@ per SSH von unserem PC aus verbinden. Auf diese Weise können wir Wireshark SSH 
 dem Internal Network zu analysieren.
 
 <figure markdown>
-  ![](../assets/img/setup-wireshark.drawio.svg){ loading=lazy width=600px }
+  ![](../assets/img/setup/setup-wireshark.drawio.svg){ loading=lazy width=600px }
 </figure>
 
 ## Router VM's
