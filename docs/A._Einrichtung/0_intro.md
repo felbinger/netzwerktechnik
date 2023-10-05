@@ -42,6 +42,10 @@ In den erweiterten Einstellungen setzen wir den Promiscuous Mode auf "Allow All"
 der VM alle empfangenen Frames, anstatt nur die Frames, welche an die eigene MAC-Adresse adressiert sind.
 
 <figure markdown>
+  ![](../assets/img/setup/virtualbox/monitor-vm-internal-adapter.png){ loading=lazy }
+</figure>
+
+<figure markdown>
   ![](../assets/img/setup/virtualbox/monitor-vm-host-only-adapter.png){ loading=lazy }
 </figure>
 
