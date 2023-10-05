@@ -25,7 +25,12 @@ notwendigen Dateien in einem Ordner liegen. Dann kann über die Einstellungen di
 hinzugefügt werden (Storage -> SATA Controller -> +), sowie die serielle Konsole und die Netzwerkkonfiguration angepasst 
 werden. 
 
-> TODO @Luis VirtualBox Bilder (Festplatte hinzufügen, Netzwerkkonfiguration, Seriellen Port) hinzufügen
+![](../../assets/img/setup/virtualbox/routeros-add-vdi.png){ lazy-loading }
+
+![](../../assets/img/setup/virtualbox/routeros-internal-network.png){ lazy-loading }
+
+![](../../assets/img/setup/virtualbox/routeros-serial.png){ lazy-loading }
+
 
 Nach dem Start der virtuellen Maschine ist ein Login mit `admin` und leerem Passwort möglich, woraufhin das Passwort 
 direkt geändert werden muss.

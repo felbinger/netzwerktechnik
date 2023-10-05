@@ -28,7 +28,8 @@ Nachdem die Installation abgeschlossen ist, wird die VM heruntergefahren und das
 Network). Außerdem wird eine serielle Schnittstelle hinzugefügt (Port Mode: Host Pipe, Disable: Connect to existing
 pipe/socket), welche die Interaktion mit der CLI vereinfacht.
 
-> TODO @Luis Bilder VirtualBox Konfiguration: Netzwerk und serielle Konsole
+![](../../assets/img/setup/virtualbox/vyos-internal-network.png){ lazy-loading }
+![](../../assets/img/setup/virtualbox/vyos-serial.png){ lazy-loading }
 
 > TODO @Luis Beschreibung wie Netzwerk umkonfiguriert wird verbessern
 
