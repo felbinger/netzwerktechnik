@@ -1,7 +1,7 @@
 # 2. Virtual LAN (IEEE 802.1q)
 
 !!! info
-    Ein Virtual Local Area Network ist ein logisches Netzwerk, das in einem physischen Netzwerk erstellt wird, um 
+    Ein Virtual Local Area Network ist ein logisches Netzwerk, welches in einem physischen Netzwerk erstellt wird, um 
     Gruppen von Geräten zu isolieren und zu organisieren. VLANs ermöglichen es, den Datenverkehr in einem Netzwerk zu 
     segmentieren und zu steuern, indem sie Geräte in unterschiedliche virtuelle Gruppen aufteilen, unabhängig von ihrer
     physischen Position im Netzwerk.

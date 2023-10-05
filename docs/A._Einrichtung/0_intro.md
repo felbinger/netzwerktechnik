@@ -1,17 +1,17 @@
 # Einleitung
 
-Zunächst ist es unser Ziel, zwei Router einzurichten, einen mit VyOS und den anderen mit Mikrotik RouterOS, die über
-eine Verbindung miteinander verbunden sind. Dies kann in VirtualBox durch die Verwendung des Netzwerktyps 
-[Internal Network](https://www.virtualbox.org/manual/ch06.html#network_internal) erreicht werden.
+Zunächst ist es unser Ziel, zwei Router einzurichten. Einen mit VyOS und einen anderen mit Mikrotik RouterOS, welche 
+miteinander verbunden sind. Dies kann in VirtualBox durch die Verwendung des Netzwerktyps [Internal Network](https://www.virtualbox.org/manual/ch06.html#network_internal)
+erreicht werden.
 
 <figure markdown>
   ![](../assets/img/setup/setup.drawio.svg){ loading=lazy width=600px }
 </figure>
 
-Außerdem planen wir die Einrichtung einer virtuellen Maschine (VM), die es ermöglicht, auf das virtuelle Netzwerk
+Außerdem planen wir die Einrichtung einer virtuellen Maschine (VM), welche es ermöglicht, auf das virtuelle Netzwerk
 zwischen den beiden Routern zuzugreifen. Diese VM erhält zwar eine Schnittstelle im internen Netzwerk der Router, jedoch
-keine IP-Adressen. Durch eine zweite Schnittstelle, die den
-Netzwerktyp [Host-only Adapter](https://www.virtualbox.org/manual/ch06.html#network_hostonly) verwendet, können wir uns
+keine IP-Adressen. Durch eine zweite Schnittstelle, die den Netzwerktyp 
+[Host-only Adapter](https://www.virtualbox.org/manual/ch06.html#network_hostonly) verwendet, können wir uns
 per SSH von unserem PC aus verbinden. Auf diese Weise können wir Wireshark SSH Remote Capture nutzen, um die Pakete auf 
 dem Internal Network zu analysieren.
 
@@ -20,10 +20,11 @@ dem Internal Network zu analysieren.
 </figure>
 
 ## Router VM's
-Erstellen Sie zunächst die virtuellen Maschinen der Router, siehe [1. VyOS](../1_vyos/) und [2. Mikrotik RouterOS](../2_routeros/).
+Erstellen Sie zunächst die virtuellen Maschinen der Router, siehe [1. VyOS](../1_vyos/) und 
+[2. Mikrotik RouterOS](../2_routeros/).
 
 ## "Monitor VM"
-Abschließend richten wir die "Monitor-VM" ein, die es uns ermöglicht, mit Wireshark auf das interne Netzwerk
+Abschließend richten wir die "Monitor-VM" ein, welche es uns ermöglicht, mit Wireshark auf das interne Netzwerk
 zuzugreifen. 
 
 Hierfür navigieren wir zuerst in VirtualBox zum Network Manager (Datei -> Tools -> Network Manager) und
@@ -34,19 +35,18 @@ erstellen dort ein neues Host-only Netzwerk:
 </figure>
 
 Anschließend erstellen wir eine neue virtuelle Maschine, um ein weiteres VyOS zu installieren. Diesmal fügen wir neben
-des "Internal Networks" eine zweite Netzwerkschnittstelle hinzu, die wir auf den Typ "Host-only Adapter" stellen und das
-soeben erstellte Host-only Network `vboxnet0` konfigurieren.
+des "Internal Networks" eine zweite Netzwerkschnittstelle hinzu, welche den Typ "Host-only Adapter" besitzt und das
+soeben erstellte Host-only Network `vboxnet0` konfiguriert.
 
-In den erweiterten Einstellungen setzen wir für den
-Promiscuous Mode auf "Allow All". Dadurch verarbeitet die Netzwerkkarte der VM alle empfangenen Frames, anstatt nur die
-Frames, die an die eigene MAC-Adresse adressiert sind.
+In den erweiterten Einstellungen setzen wir den Promiscuous Mode auf "Allow All". Dadurch verarbeitet die Netzwerkkarte 
+der VM alle empfangenen Frames, anstatt nur die Frames, welche an die eigene MAC-Adresse adressiert sind.
 
 <figure markdown>
   ![](../assets/img/setup/virtualbox/monitor-vm-host-only-adapter.png){ loading=lazy }
 </figure>
 
 Danach wird die VyOS Installation durchgeführt (`install image`, analog zum Router). Nachdem die VM neu gestartet wurde,
-wird VyOS konfiguriert:
+wird VyOS wie folgt konfiguriert:
 ```sh
 configure
 set interfaces eth eth0 ipv6 address no-default-link-local 

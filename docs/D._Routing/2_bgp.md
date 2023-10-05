@@ -2,7 +2,9 @@
 
 ## Theoretische Grundlagen
 !!! info "Was ist ein autonomes System?"
-    Ein autonomes System (AS) ist eine Gruppe von IP-Netzen und Routern, die unter einer einzigen administrativen Kontrolle stehen und Routeninformationen über das Internet austauschen. Es wird durch eine eindeutige ASN (Autonomous System Number) identifiziert.
+    Ein autonomes System (AS) ist eine Gruppe von IP-Netzen und Routern, welche unter einer einzigen administrativen 
+    Kontrolle stehen und Routeninformationen über das Internet austauschen. Es wird durch eine eindeutige ASN 
+    (Autonomous System Number) identifiziert.
 
 ## Szenario #1
 
@@ -70,10 +72,13 @@ Nun kann validiert werden, ob die BGP Session Established ist:
 
 ## Szenario #2
 
-In diesem Szenario werden drei Router in einer Linie miteinander verbunden.
-Die äußeren Router (AS 65100 & AS 65200) announcen jeweils ein /24er IPv4 Präfix (10.1.100.0/24 & 10.1.200.0/24). Innerhalb von AS 65000 wurden BGP Importfilter implementiert, um sicherzustellen, dass keine falsche IPv4 Netze announciert werden.
+In diesem Szenario werden drei Router in einer Linie miteinander verbunden.  
+Die äußeren Router (AS 65100 & AS 65200) announcen jeweils ein /24er IPv4 Präfix (10.1.100.0/24 & 10.1.200.0/24). 
+Innerhalb von AS 65000 wurden BGP Importfilter implementiert, um sicherzustellen, dass keine falsche IPv4 Netze 
+announct werden.
 
-Die beiden äußeren Router verfügen über BGP Import- und Exportfilter, die verhindern das falsche Präfixe an AS 65000 announciert werden und sicherstellen, dass nur Präfixe importiert werden die auf der Präfixliste stehen.
+Die beiden äußeren Router verfügen über BGP Import- und Exportfilter, die verhindern das falsche Präfixe an AS 65000
+announct werden und sicherstellen, dass nur Präfixe importiert werden die auf der Präfixliste stehen.
 
 <figure markdown>
   ![](../assets/img/routing/bgp/scenario-2.drawio.svg){ loading=lazy width="600px" }

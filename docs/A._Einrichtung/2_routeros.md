@@ -1,22 +1,21 @@
 # 2. Mikrotik RouterOS
 
-MikroTik RouterOS ist ein proprietäres Betriebssystem, das von MikroTik entwickelt wurde und auf deren Netzwerkgeräten
-eingesetzt wird. Es bietet umfassende Routing-, Firewall- und Managementfunktionen für Netzwerke und ist speziell auf
-die Hardware von MikroTik-Geräten zugeschnitten.
+MikroTik RouterOS ist ein proprietäres Betriebssystem, welches von MikroTik entwickelt wurde und auf deren 
+Netzwerkgeräten eingesetzt wird. Es bietet umfassende Routing-, Firewall- und Managementfunktionen für Netzwerke und ist
+speziell auf die Hardware von MikroTik-Geräten zugeschnitten.
 
 Zusätzlich zur hardwarebasierten Implementierung gibt es auch eine Cloud Hosted Router-Variante von MikroTik RouterOS,
-die für den Einsatz in virtuellen Umgebungen optimiert ist. Diese kann ohne Kosten mit einer maximalen Geschwindigkeit 
+welche für den Einsatz in virtuellen Umgebungen optimiert ist. Diese kann ohne Kosten mit einer maximalen Geschwindigkeit 
 von 1 Mbit/s verwendet werden, was für Testzwecke ausreichend ist
 ([siehe Lizenzbedingung](https://wiki.mikrotik.com/wiki/Manual:CHR#CHR_Licensing)).
 
-Für physische MikroTik-Geräte ist der Einsatz von RouterOS mit Lizenzen-Level verbunden
-([siehe Lizenzbedingung](https://wiki.mikrotik.com/wiki/Manual:License#License_Levels)). Die meisten Geräte 
-(RouterBoards, Cloud Core Router und Cloud Router Switche) werden standardmäßig mit einer Level 5 Lizenz ausgestattet, 
-die für nahezu alle Anwendungsfälle ausreichend ist.
+Für physische MikroTik-Geräte ist der Einsatz von RouterOS mit Lizenzen-Level verbunden([siehe Lizenzbedingung](https://wiki.mikrotik.com/wiki/Manual:License#License_Levels)).
+Die meisten Geräte (RouterBoards, Cloud Core Router und Cloud Router Switche) werden standardmäßig mit einer Level 5 
+Lizenz ausgestattet, welche für nahezu alle Anwendungsfälle ausreichend ist.
 
 ## Einrichtung der virtuellen Maschine
-Laden Sie zunächst von der [Mikrotik Download Seite](https://mikrotik.com/download) die gewünschte Version von RouterOS 
-als VDI (unter der Kategorie Cloud Hosted Router) herunter und entpacken Sie die vdi-Datei aus dem zip-Archiv. 
+Laden Sie zunächst von der [Mikrotik Download Seite](https://mikrotik.com/download) die gewünschte Version von RouterOS als VDI 
+(unter der Kategorie Cloud Hosted Router) herunter und entpacken Sie die vdi-Datei aus dem zip-Archiv. 
 
 ![](../assets/img/setup/mikrotik-download-chr.png)
 
@@ -32,11 +31,11 @@ Nach dem Start der virtuellen Maschine ist ein Login mit `admin` und leerem Pass
 direkt geändert werden muss.
 
 === "Linux"
-    Um sich mit dem UNIX Socket, der die serielle Schnittstelle zur virtuellen Maschine darstellt, zu verbinden kann die
-    Software socat verwendet werden:
+    Um sich mit dem UNIX Socket, welcher die serielle Schnittstelle zur virtuellen Maschine darstellt, zu verbinden kann
+    die Software socat wie folgt verwendet werden:
 
     ```sh
-    socat UNIX-CONNECT:/tmp/routeros7serial -,b9600,echo=0,raw
+    socat UNIX-CONNECT:/tmp/routeros -,b9600,echo=0,raw
     ```
 
 === "Windows"
