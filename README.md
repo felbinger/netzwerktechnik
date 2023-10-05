@@ -19,6 +19,10 @@ vertiefen, während wir diese Informationssammlung erweitern.
 * (für später, dynamisches Routing): Bird2 (Alpine Linux)
 * (für später): pfSense / OPNsense / OpenWRT
 
+### Grundlagen
+* NAT
+* Firewalls
+
 ### Tunnel
 * Point-to-Point Tunneling Protocol
 * Layer 2 Tunneling Protocol
@@ -31,6 +35,9 @@ vertiefen, während wir diese Informationssammlung erweitern.
 * (OpenConnect)
 
 ### Routing
+* Virtual Routing and Forwarding (VRF)
+* Policy Based Routing (PBR)
+* statisches Routing
 * (Router Information Protocol)
 * Open Shortest Path First
 * Border Gateway Protocol
@@ -41,3 +48,4 @@ vertiefen, während wir diese Informationssammlung erweitern.
 * MAC Security (IEEE 802.1ae)
 * Point-to-Point Protocol over Ethernet
 * Link Layer Discovery Protocol
+* Virtual Router Redundancy Protocol

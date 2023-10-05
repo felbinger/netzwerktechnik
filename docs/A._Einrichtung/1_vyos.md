@@ -26,17 +26,17 @@ Optionen gewählt werden können.
 ### Netzwerk und serielle Konsole konfigurieren
 
 Nachdem die Installation abgeschlossen ist, wird die VM heruntergefahren und das Netzwerk umkonfiguriert (Internal
-Network). Außerdem wird eine Serielle Schnittstelle hinzugefügt (Port Mode: Host Pipe, Disable: Connect to existing
+Network). Außerdem wird eine serielle Schnittstelle hinzugefügt (Port Mode: Host Pipe, Disable: Connect to existing
 pipe/socket), die die Interaktion mit der CLI vereinfacht.
 
-> TODO @Luis Bilder VirtualBox Konfiguration: Netzwerk und Serielle Konsole
+> TODO @Luis Bilder VirtualBox Konfiguration: Netzwerk und serielle Konsole
 
 > TODO @Luis Beschreibung wie Netzwerk umkonfiguriert wird verbessern
 
-Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die Serielle Konsole initialisiert wird.
+Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die serielle Konsole initialisiert wird.
 
 === "Linux"
-    Um sich mit dem UNIX Socket, der die Serielle Schnittstelle zur virtuellen Maschine darstellt, zu verbinden kann die 
+    Um sich mit dem UNIX Socket, der die serielle Schnittstelle zur virtuellen Maschine darstellt, zu verbinden kann die 
     Software socat verwendet werden:
 
     ```sh
@@ -47,7 +47,7 @@ Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die Se
     Tastatureingaben direkt an den Socket gesendet werden und nicht zunächst lokal gepuffert werden. Dadurch ist dann 
     auch die Automatische Vervollständigung mit <kbd>&#x21b9;</kbd> (Tabulator) möglich.
 
-    Dazu wird zunächst die Serielle Konsole in den Hintergrund geschickt: <kbd>STRG</kbd> + <kbd>z</kbd>
+    Dazu wird zunächst die serielle Konsole in den Hintergrund geschickt: <kbd>STRG</kbd> + <kbd>z</kbd>
 
     Anschließend wird stty umkonfiguriert:
 
@@ -55,7 +55,7 @@ Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die Se
     stty raw -echo
     ```
 
-    Im letzten Schritt kann die Serielle Konsole wieder in den Vordergrund geholt werden.  
+    Im letzten Schritt kann die serielle Konsole wieder in den Vordergrund geholt werden.  
     Dazu wird `fg` getippt und zweimal <kbd>&#x21b5;</kbd> (Enter) gedrückt.
 
 === "Windows"
