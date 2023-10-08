@@ -40,23 +40,9 @@ Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die se
     Software socat verwendet werden:
 
     ```sh
-    socat UNIX-CONNECT:/tmp/vyos -,b57600
+    socat UNIX-CONNECT:/tmp/vyos -,b9600,echo=0,raw
     ```
 
-    Anschließend kann die Shell verbessert werden, indem wir unser Terminal so umkonfigurieren, dass alle
-    Tastatureingaben direkt an den Socket gesendet werden und nicht zunächst lokal gepuffert werden. Dadurch ist dann 
-    auch die Automatische Vervollständigung mit <kbd>&#x21b9;</kbd> (Tabulator) möglich.
-
-    Dazu wird zunächst die serielle Konsole in den Hintergrund geschickt: <kbd>STRG</kbd> + <kbd>z</kbd>
-
-    Anschließend wird stty umkonfiguriert:
-
-    ```sh
-    stty raw -echo
-    ```
-
-    Im letzten Schritt kann die serielle Konsole wieder in den Vordergrund geholt werden.  
-    Dazu wird `fg` getippt und zweimal <kbd>&#x21b5;</kbd> (Enter) gedrückt.
 
 === "Windows"
     > TODO @Luis Beschreibung für Verwendung von Putty oder ähnlichem einfügen
