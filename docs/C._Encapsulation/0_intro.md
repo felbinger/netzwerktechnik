@@ -1,17 +1,7 @@
-# Encapsulation, Tunnel und VPN Protokolle
+# Einleitung
 
-> TODO Tabelle mit vergleich
+Ein Encapsulation-Protokoll verpackt Daten in spezielle Rahmen oder Pakete, indem es ihnen Header-Informationen hinzufügt, die für die Übertragung im Netzwerk benötigt werden. Diese Verkapselung ermöglicht die sichere und effiziente Übertragung von Daten über verschiedene Netzwerke, indem sie in einen äußeren Rahmen eingebettet werden.
 
-| Protokoll                                             | Verschlüsselung | OSI Schicht |
-|-------------------------------------------------------|-----------------|:-----------:|
-| Generic Routing Encapsulation (GRE)                   | Nein            |      3      |
-| Virtual Extensible LAN VXLAN                          | Nein            |      4      |
-| Generic Network Virtualization Encapsulation (Geneve) | Nein            |      4      |
-| Layer 2 Tunneling Protocol (L2TP)                     | Ja mit IPsec    |      2      |
-| Point-to-Point Tunneling Protocol (PPTP)              | Ja (unsicher)   |     3?      |
-| IP Security (IPsec)                                   | Ja              |      3      |
-| Wireguard                                             | Ja (ECC)        |     3/7     |
-| Secure-Socket Tunneling Protocol (SSTP)               | Ja              |      7      |
-| OpenVPN                                               | Ja              |      7      |
-| OpenConnect                                           | Ja              |      7      |
- 
+| Protokoll | GRE | VXLAN | L2TP |
+|-----------|:---:|:-----:|:----:|
+| Schicht   | 4   | 4     | 2    |
