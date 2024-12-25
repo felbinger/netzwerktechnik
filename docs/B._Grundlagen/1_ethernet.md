@@ -18,20 +18,6 @@
     commit
     ```
 
-    ```sh
-    config
-    ```
-    ```sh
-    set interfaces ethernet eth0 address '10.0.0.1/30'
-    ```
-    ```sh
-    commit
-    ```
-    ```sh
-    save
-    ```
-
-
 === "Mikrotik RouterOS"
     ```sh
     ip/address/add address=10.0.0.2/30 interface=ether1
