@@ -1,25 +1,26 @@
 # 4. IP Adressvergabe
 
-> TODO muss noch erarbeitet werden.
+Obgleich der Fokus in den letzten Kapitel auf Layer 2 Netzwerken lag, wurde zur Addressierung der
+Systeme im Netzwerk bereits auf die Layer 3 (IPv4 / IPv6 Adresse) zurückgegriffen. Neben der Möglichkeit
+diese statisch zu konfigurieren, gibt es dynamische Verfahren, deren Konfiguration im folgenden erläutert
+werden soll.
 
-## IPv4 Adressvergabe 
-### Statisch 
-- IPv4 Adresse & Netzmaske
-- ggf. Gateway / DNS-Server
+!!! info
+    Zur Erinnerung: Die Zahl hinter dem Slash (`/`) in einer IP-Adresse, gibt an wie viele Bits zum Netz
+    gehören.
 
-### DHCPv4
-- automatisch
-- DHCP Server vergibt Adressen
+<!-- TODO
+## DHCPv4
+### Client
+### Server
 
-## IPv6 Adressvergabe
-### Statisch
-- IPv6 Adresse & Netzmaske
-- ggf. Gateway (default: fe80::1) / DNS-Server
-
-### DHCPv6 
+## DHCPv6
 - stateful
-- DHCP Server vergibt Adressen
+### Client
+### Server
 
-### Stateless Address Autoconfiguration (SLAAC)
-- EUI64
+## Stateless Address Autoconfiguration (SLAAC)
+- stateless (Rechner fragt nach Adresse und nimmt sie sich dann)
+- EUI64, predictable (MAC Adresse)
 - Privacy Extension
+-->

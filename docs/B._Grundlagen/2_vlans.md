@@ -12,7 +12,11 @@
 
 === "VyOS"
     ```sh
+    configure
+    delete interfaces ethernet eth0 address
     set interfaces ethernet eth0 vif 15 address '10.0.0.1/30'
+    commit
+    save
     ```
 
 === "Mikrotik RouterOS"
@@ -21,6 +25,12 @@
     ip/address/add address=10.0.0.2/30 interface=ether1.15
     ```
 
+Im Vergleich zum Paketmitschnitt aus dem [vorherigen Kapitel (Ethernet)](./1_ethernet.md) beinhaltet der Ethernet Header
+vier weitere Bytes nach der Quell-MAC-Adresse, bevor der EtherType beginnt. Darin befindet sich der 802.1Q Header mit der
+gesetzten VLAN ID 15.
+
 ![](../assets/img/basics/wikipedia/ieee8021q.png)
 
-> TODO: ping -> In Wireshark ARP und ICMP betrachten und bilder machen (unterschied zu ethernet (vlan tag) aufzeigen)
+<!-- TODO
+Lediglich Screenshot aus Wireshark von Ethernet Paket für VLAN ID
+-->

@@ -17,7 +17,11 @@ Da wir keinen Switch haben, auf dem wir das ganze nachstellen können, konfiguri
 
 === "VyOS"
     ```sh
+    config
+    delete interfaces ethernet eth0 vif 15
     set interfaces ethernet eth0 vif-s 20 vif-c 15 address '10.0.0.1/30'
+    commit
+    save
     ```
 
 === "Mikrotik RouterOS"
@@ -29,4 +33,6 @@ Da wir keinen Switch haben, auf dem wir das ganze nachstellen können, konfiguri
 
 ![](../assets/img/basics/wikipedia/ieee8021ad.png)
 
-> TODO muss noch erarbeitet werden.
+<!-- TODO
+muss noch erarbeitet werden.
+-->
