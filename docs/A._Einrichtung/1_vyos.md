@@ -20,7 +20,7 @@ und gestartet. Sobald die Login-Maske sichtbar ist, kann man sich mit den Zugang
 Nun kann der Installationsprozess mit dem Befehl `install image` gestartet werden, bei dem primär die vorausgewählten
 Optionen gewählt werden können.
 
-<asciinema-player src="../../assets/cast/vyos-install.cast"></asciinema-player>
+<asciinema-player src="../assets/cast/vyos-install.cast"></asciinema-player>
 
 ### Netzwerk und serielle Konsole konfigurieren
 
@@ -28,8 +28,8 @@ Nachdem die Installation abgeschlossen ist, wird die VM heruntergefahren und das
 Network). Außerdem wird eine serielle Schnittstelle hinzugefügt (Port Mode: Host Pipe, Disable: Connect to existing
 pipe/socket), welche die Interaktion mit der CLI vereinfacht.
 
-![](../../assets/img/setup/virtualbox/vyos-internal-network.png){ lazy-loading }
-![](../../assets/img/setup/virtualbox/vyos-serial.png){ lazy-loading }
+![](../assets/img/setup/virtualbox/vyos-internal-network.png){ lazy-loading }
+![](../assets/img/setup/virtualbox/vyos-serial.png){ lazy-loading }
 
 <!-- TODO
 Luis Beschreibung wie Netzwerk umkonfiguriert wird verbessern

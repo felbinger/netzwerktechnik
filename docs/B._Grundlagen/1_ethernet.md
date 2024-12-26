@@ -11,7 +11,7 @@ Zwar ist es, in einem Layer 2 Netzwerk, prinzipiell möglich Ethernet-Frames dir
 in den meisten Fällen dennoch die Layer 3 (IPv4 / IPv6) Adresse zur Addressierung von Mitglieder verwendet.
 
 <figure markdown>
-  ![](../assets/img/basics/ethernet.drawio.svg){ loading=lazy width="500px" }
+  ![](../assets/img/basics/1_ethernet.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 === "VyOS"
@@ -28,6 +28,10 @@ in den meisten Fällen dennoch die Layer 3 (IPv4 / IPv6) Adresse zur Addressieru
     ip/address/add address=10.0.0.2/30 interface=ether1
     ipv6/address/add address=fd00::2/64 interface=ether1
     ```
+
+<figure markdown>
+  ![](../assets/img/basics/1_ethernet-frame.drawio.svg){ loading=lazy width="500px" }
+</figure>
 
 <!-- TODO
 Wireshark öffnen, Konfiguration anwenden, Warten bis NDP (fe80::) fertig

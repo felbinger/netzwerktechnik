@@ -7,7 +7,7 @@
     physischen Position im Netzwerk.
 
 <figure markdown>
-  ![](../assets/img/basics/vlan.drawio.svg){ loading=lazy width="500px" }
+  ![](../assets/img/basics/2_vlan.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 === "VyOS"
@@ -29,7 +29,9 @@ Im Vergleich zum Paketmitschnitt aus dem [vorherigen Kapitel (Ethernet)](./1_eth
 vier weitere Bytes nach der Quell-MAC-Adresse, bevor der EtherType beginnt. Darin befindet sich der 802.1Q Header mit der
 gesetzten VLAN ID 15.
 
-![](../assets/img/basics/wikipedia/ieee8021q.png)
+<figure markdown>
+  ![](../assets/img/basics/2_vlan-frame.drawio.svg){ loading=lazy width="500px" }
+</figure>
 
 <!-- TODO
 Lediglich Screenshot aus Wireshark von Ethernet Paket für VLAN ID

@@ -6,13 +6,13 @@
     zu kapseln, wodurch der transparente Transport von VLAN-Verkehr mehrerer Kunden ermöglicht wird.
 
 <figure markdown>
-  ![](../assets/img/basics/qinq.drawio.svg){ loading=lazy width="500px" }
+  ![](../assets/img/basics/3_qinq.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 Da wir keinen Switch haben, auf dem wir das ganze nachstellen können, konfigurieren wir dieses vereinfachte Beispiel:
 
 <figure markdown>
-  ![](../assets/img/basics/qinq-simple.drawio.svg){ loading=lazy width="500px" }
+  ![](../assets/img/basics/3_qinq-simple.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
 === "VyOS"
@@ -31,7 +31,9 @@ Da wir keinen Switch haben, auf dem wir das ganze nachstellen können, konfiguri
     ip/address/add address=10.0.0.2/30 interface=ether1.20.15
     ```
 
-![](../assets/img/basics/wikipedia/ieee8021ad.png)
+<figure markdown>
+  ![](../assets/img/basics/3_qinq-frame.drawio.svg){ loading=lazy width="500px" }
+</figure>
 
 <!-- TODO
 muss noch erarbeitet werden.

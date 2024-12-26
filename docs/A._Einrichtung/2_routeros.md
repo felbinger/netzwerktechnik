@@ -25,11 +25,11 @@ notwendigen Dateien in einem Ordner liegen. Dann kann über die Einstellungen di
 hinzugefügt werden (Storage -> SATA Controller -> +), sowie die serielle Konsole und die Netzwerkkonfiguration angepasst 
 werden. 
 
-![](../../assets/img/setup/virtualbox/routeros-add-vdi.png){ lazy-loading }
+![](../assets/img/setup/virtualbox/routeros-add-vdi.png){ lazy-loading }
 
-![](../../assets/img/setup/virtualbox/routeros-internal-network.png){ lazy-loading }
+![](../assets/img/setup/virtualbox/routeros-internal-network.png){ lazy-loading }
 
-![](../../assets/img/setup/virtualbox/routeros-serial.png){ lazy-loading }
+![](../assets/img/setup/virtualbox/routeros-serial.png){ lazy-loading }
 
 
 Nach dem Start der virtuellen Maschine ist ein Login mit `admin` und leerem Passwort möglich, woraufhin das Passwort 
