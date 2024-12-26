@@ -358,3 +358,4 @@ $RECYCLE.BIN/
 
 # drawio backup files
 .$*.bkp
+.direnv
