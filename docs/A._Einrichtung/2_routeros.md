@@ -45,6 +45,6 @@ direkt geändert werden muss.
 
 === "Windows"
     .
-    <!-- TODO
-    Luis Beschreibung für Verwendung von Putty oder ähnlichem einfügen
+    <!-- TODO @Luis
+    Beschreibung für Verwendung von Putty oder ähnlichem einfügen
     -->

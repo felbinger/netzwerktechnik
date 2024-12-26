@@ -9,7 +9,7 @@ werden soll.
     Zur Erinnerung: Die Zahl hinter dem Slash (`/`) in einer IP-Adresse, gibt an wie viele Bits zum Netz
     gehören.
 
-<!-- TODO
+<!-- TODO @all
 ## DHCPv4
 ### Client
 ### Server

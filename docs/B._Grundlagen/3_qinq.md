@@ -35,6 +35,6 @@ Da wir keinen Switch haben, auf dem wir das ganze nachstellen können, konfiguri
   ![](../assets/img/basics/3_qinq-frame.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
-<!-- TODO
+<!-- TODO @Nico
 muss noch erarbeitet werden.
 -->

@@ -33,6 +33,6 @@ gesetzten VLAN ID 15.
   ![](../assets/img/basics/2_vlan-frame.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
-<!-- TODO
+<!-- TODO @Nico
 Lediglich Screenshot aus Wireshark von Ethernet Paket für VLAN ID
 -->

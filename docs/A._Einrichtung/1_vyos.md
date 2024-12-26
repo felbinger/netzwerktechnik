@@ -31,8 +31,8 @@ pipe/socket), welche die Interaktion mit der CLI vereinfacht.
 ![](../assets/img/setup/virtualbox/vyos-internal-network.png){ lazy-loading }
 ![](../assets/img/setup/virtualbox/vyos-serial.png){ lazy-loading }
 
-<!-- TODO
-Luis Beschreibung wie Netzwerk umkonfiguriert wird verbessern
+<!-- TODO @Luis
+Beschreibung wie Netzwerk umkonfiguriert wird verbessern
 -->
 
 Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die serielle Konsole initialisiert wird.
@@ -48,6 +48,6 @@ Im Anschluss kann die virtuelle Maschine wieder gestartet werden, wodurch die se
 
 === "Windows"
     .
-    <!-- TODO
-    Luis Beschreibung für Verwendung von Putty oder ähnlichem einfügen
+    <!-- TODO @Luis
+    Beschreibung für Verwendung von Putty oder ähnlichem einfügen
     -->

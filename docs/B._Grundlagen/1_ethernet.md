@@ -33,7 +33,7 @@ in den meisten Fällen dennoch die Layer 3 (IPv4 / IPv6) Adresse zur Addressieru
   ![](../assets/img/basics/1_ethernet-frame.drawio.svg){ loading=lazy width="500px" }
 </figure>
 
-<!-- TODO
+<!-- TODO @Nico
 Wireshark öffnen, Konfiguration anwenden, Warten bis NDP (fe80::) fertig
 ping und ping6
 ICMP, ARP, NDP (fd00::) betrachten und analysieren

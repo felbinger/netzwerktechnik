@@ -9,6 +9,6 @@ Um ein besseres Verständnis für die Beispiele zu entwickeln, empfehlen wir, di
 können Sie virtuelle Maschinen verwenden, auf denen die Router-Betriebssysteme installiert sind. Die Einrichtung dieser
 wird im Kapitel [A. Einrichtung](./A._Einrichtung/0_intro/) mit VirtualBox für die Host-Betriebssysteme Windows und Linux erläutert.
 
-<!-- TODO
+<!-- TODO @Luis
 Alternativ können Tools wie Cisco Packet Tracer; GNS3 oder EVE-NG verwendet werden
 -->

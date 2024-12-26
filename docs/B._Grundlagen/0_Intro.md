@@ -32,7 +32,7 @@ Die Konfiguration aus der Umgebung `config` kann mit dem Befehl `commit` in die 
 werden. Die Konfiguration aus der Umgebung `running-config` kann mit dem Befehl `save` in die Umgebung `startup-config` geschrieben
 werden.
 
-<!-- TODO asciinema -->
+<!-- TODO @Nico asciinema -->
 ```shell
 vyos@vyos:~$ show interfaces
 Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
@@ -100,4 +100,4 @@ getrennt sind. Das Setzen von Konfigurationen ist durch den `add`-Befehl innerha
 möglich. Zum Löschen muss zunächst mit dem `print`-Befehl ermittelt werden, welche ID das Element hat. Anschließend
 kann es mit `remote <ID>` gelöscht werden
 
-<!-- TODO asciinema -->
+<!-- TODO @Nico asciinema -->
